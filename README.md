@@ -34,7 +34,7 @@ Connessione Internet: È necessaria una connessione a Internet per accedere al s
 
 Permessi di Esecuzione: Assicurati di avere i permessi necessari per eseguire script Python e accedere ai file sul tuo sistema.
 
-Per avviare bot accedi alla riga di commando cmd e inserisci "pip install PyQT5 playwright" dopo aver installato tutto inserisci "playwright install".
+Per avviare bot accedi alla riga di commando cmd e inserisci "pip install PyQT5 playwright" dopo aver installato tutto inserisci "playwright install". Inoltre al codice modifica inserendo i tuoi dati le righe 98 221 224
 
 Conclusione
 
