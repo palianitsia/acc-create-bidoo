@@ -95,7 +95,7 @@ def start_registration(number_of_registrations, intervallo, email_domain, userna
                     page.fill('xpath=//*[@id="password_signup"]', password)
                     page.check('xpath=/html/body/div[1]/div/form/div[4]/div/label/input')
                     page.click('xpath=/html/body/div[1]/div/form/div[4]/button/b')
-                    page.wait_for_url("**/home_alt.php?onboard=false&nu=true&fr=84319", timeout=50000)
+                    page.wait_for_url("**/home_alt.php?onboard=false&nu=true&fr=digita qui il tuo codice d'invito", timeout=50000)
                 except Exception as e:
                     QMessageBox.critical(None, "Errore", f"Errore durante la registrazione: {e}")
                 
@@ -218,10 +218,10 @@ class RegistrationApp(QWidget):
             email_domain = self.email_domain.currentText()
             username_length_min = int(self.username_length_min.currentText())
             username_length_max = int(self.username_length_max.currentText())
-            fixed_password = self.fixed_password.text() if self.fixed_password.text() else "qwerty963"
+            fixed_password = self.fixed_password.text() if self.fixed_password.text() else "inserisci la tua password fissa"
             use_random_password = self.use_random_password.isChecked()
             selected_language = self.selected_language.currentText()
-            invitation_code = self.invitation_code.text() if self.invitation_code.text() else "84319"
+            invitation_code = self.invitation_code.text() if self.invitation_code.text() else "digita qui il tuo codice d'invito"
 
             start_registration(count, intervallo, email_domain, username_length_min, username_length_max, fixed_password, use_random_password, selected_language, invitation_code)
             QMessageBox.information(self, "Successo", f"{count} registrazioni completate.")
