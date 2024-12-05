@@ -34,6 +34,8 @@ Connessione Internet: È necessaria una connessione a Internet per accedere al s
 
 Permessi di Esecuzione: Assicurati di avere i permessi necessari per eseguire script Python e accedere ai file sul tuo sistema.
 
+Per avviare bot accedi alla riga di commando cmd e inserisci "pip install PyQT5 playwright" dopo aver installato tutto inserisci "playwright install".
+
 Conclusione
 
 Questo bot è uno strumento utile per automatizzare la registrazione di account su un sito web, ma è importante utilizzarlo in conformità con i termini di servizio del sito web e le leggi locali.
